@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn Predictor</title>
+</head>
+<body>
+
+<h1>Customer Churn Predictor</h1>
+<form method="post" action="/predict">
+    <label>Gender (0 for female, 1 for male)</label><br>
+    <input type="number" name="gender" min="0" max="1" required><br><br>
+
+    <label>Senior Citizen (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="seniorcitizen" min="0" max="1" required><br><br>
+
+    <label>Partner (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="partner" min="0" max="1" required><br><br>
+
+    <label>Dependents (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="dependents" min="0" max="1" required><br><br>
+
+    <label>Phone Service (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="phoneservice" min="0" max="1" required><br><br>
+
+    <label>Multiple Lines (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="multiplelines" min="0" max="1" required><br><br>
+
+    <label>Internet Service (0 for No, 1 for DSL, 2 for Fiber optic)</label><br>
+    <input type="number" name="internetservice" min="0" max="2" required><br><br>
+
+    <label>Online Security (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="onlinesecurity" min="0" max="1" required><br><br>
+
+    <label>Online Backup (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="onlinebackup" min="0" max="1" required><br><br>
+
+    <label>Device Protection (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="deviceprotection" min="0" max="1" required><br><br>
+
+    <label>Tech Support (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="techsupport" min="0" max="1" required><br><br>
+
+    <label>Streaming TV (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="streamingtv" min="0" max="1" required><br><br>
+
+    <label>Streaming Movies (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="streamingmovies" min="0" max="1" required><br><br>
+
+    <label>Contract (0 for Month-to-month, 1 for One year, 2 for Two year)</label><br>
+    <input type="number" name="contract" min="0" max="2" required><br><br>
+
+    <label>Paperless Billing (0 for No, 1 for Yes)</label><br>
+    <input type="number" name="paperlessbilling" min="0" max="1" required><br><br>
+
+    <label>Payment Method (0 for Electronic check, 1 for Mailed check, 2 for Bank transfer, 3 for Credit card)</label><br>
+    <input type="number" name="paymentmethod" min="0" max="3" required><br><br>
+
+    <label>Tenure</label><br>
+    <input type="number" name="tenure" step="0.01" required><br><br>
+
+    <label>Monthly Charges</label><br>
+    <input type="number" name="monthlycharges" step="0.01" required><br><br>
+
+    <label>Total Charges</label><br>
+    <input type="number" name="totalcharges" step="0.01" required><br><br>
+
+    <input type="submit" value="Predict">
+</form>
+
+</body>
+</html>

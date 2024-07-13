@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+
+<h1>Prediction Result</h1>
+{% if prediction == 1 %}
+    <p>The predicted churn is: (1)Customer will churn</p>
+{% else %}
+    <p>The predicted churn is: (0)Customer is not going to churn</p>
+{% endif %}
+
+</body>
+</html>
